@@ -1,6 +1,9 @@
 * {
     font-family: sans-serif;
     font-weight: bold;
+    color: #c0bcac;
+    list-style: none;
+    text-decoration: none;
 }
 
 #introSection {
@@ -12,41 +15,75 @@
     top: 0%
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 150px;
-    width: 85%;
-    left: 7.5%;
-    position: relative
-
+h2 {
+    margin-top: 0px;
+    position: absolute;
+    top: 55px;
+    left: 8%
 }
-
-a {
-    text-decoration: none;
+#emailMain {
+    position: absolute;
+    top: 60px;
+    left: 80%
 }
-
-nav * {
-    list-style: none;
-    color: #c0bcac;
+#emailBackup {
+    visibility: hidden;
+    position: absolute;
+    top: 60px;
+    right: 5%;
 }
-
-nav ul {
+#navBar {
     display: flex;
     flex-direction: row;
-    padding-left: 0px;
-    width: 640px;
-    height: 40px;
+    align-items: flex-end;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
 }
 
-nav ul li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 160px;
-    height: 40px;
-}
-nav ul li a {
+#navBar >* {
+    margin-left: 5%;
     font-size: 13pt;
+}
+
+
+span {
+    color: #c0bcac;
+
+}
+
+@media screen and (max-width: 1300px) and (min-width: 600px){
+    #emailMain {
+        visibility: hidden;
+        width: 0px;
+    }
+
+    #emailBackup {
+        visibility: visible;
+
+    }
+}
+
+
+@media screen and (max-width: 700px){
+
+    #home {
+        visibility: hidden;
+    }
+
+    #skills {
+        visibility: hidden;
+    }
+
+    #emailMain {
+        visibility: hidden;
+        width: 0px;
+    }
+
+    #emailBackup {
+        visibility: visible;
+
+    }
+    
+
 }
