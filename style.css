@@ -1,7 +1,6 @@
 * {
     font-family: sans-serif;
     font-weight: bold;
-    color: #c0bcac;
     list-style: none;
     text-decoration: none;
 }
@@ -13,6 +12,10 @@
     position: absolute;
     left: 0%;
     top: 0%
+}
+
+#introSection * {
+    color: #c0bcac;
 }
 
 h2 {
@@ -39,17 +42,62 @@ h2 {
     justify-content: center;
     height: 80px;
     width: 100%;
+    
 }
 
-#navBar >* {
+#navBar > * {
     margin-left: 5%;
     font-size: 13pt;
+    
+}
+
+#personalInfo {
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+#personalInfo * {
+    color: black;
+    margin: 0px 0px 10px 0px;
+}
+
+#personalInfo span {
+    color: #c0bcac;
+}
+#personalInfo img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+#personalInfo h1 {
+    font-size: 50pt;
+}
+#personalInfo h4 {
+    font-size: 15pt;
+    line-height: 1.5;
 }
 
 
-span {
-    color: #c0bcac;
 
+#projectSection {
+    height: 100vh;
+    width: 100%;
+    background-color: #49586d;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+}
+
+#skillsSection {
+    height: 100vh;
+    width: 100%;
+    background-color: #c0bcac;
+    position: absolute;
+    left: 0%;
+    top: 200%;
 }
 
 @media screen and (max-width: 1300px) and (min-width: 600px){
