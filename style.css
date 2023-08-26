@@ -80,7 +80,13 @@ h2 {
     line-height: 1.5;
 }
 
+#sampleImage {
+    position: absolute;
+    left: 67%;
+    top: 12%;
+    width: 400px;
 
+}
 
 #projectSection {
     height: 100vh;
@@ -110,10 +116,15 @@ h2 {
         visibility: visible;
 
     }
+    #sampleImage {
+        left: 65%;
+        top: 25%;
+        width: 240px;
+    }
 }
 
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 700px) and (min-width: 550px){
 
     #home {
         visibility: hidden;
@@ -132,6 +143,41 @@ h2 {
         visibility: visible;
 
     }
+
+    #sampleImage {
+        left:70%;
+        top: 40%;
+        width: 25%;
+    }
     
 
 }
+
+
+@media screen and (max-width: 550px){
+
+    #home {
+        visibility: hidden;
+    }
+
+    #skills {
+        visibility: hidden;
+    }
+
+    #emailMain {
+        visibility: hidden;
+        width: 0px;
+    }
+
+    #emailBackup {
+        visibility: visible;
+
+    }
+
+    #sampleImage {
+        visibility: hidden;
+    }
+    
+
+}
+
