@@ -1,7 +1,6 @@
 * {
     font-family: sans-serif;
-    font-weight: bold;
-    list-style: none;
+    
     text-decoration: none;
 }
 
@@ -11,14 +10,17 @@
     width: 100%;
     position: absolute;
     left: 0%;
-    top: 0%
+    top: 0%;
+    list-style: none;
 }
 
 #introSection * {
     color: #c0bcac;
+    font-weight: bold;
+
 }
 
-h2 {
+#introSection h2 {
     margin-top: 0px;
     position: absolute;
     top: 55px;
@@ -55,12 +57,13 @@ h2 {
     width: 50%;
     position: absolute;
     top: 30%;
-    left: 10%;
+    left: 8%;
 }
 
 #personalInfo * {
     color: black;
-    margin: 0px 0px 10px 0px;
+    text-align: left;
+    margin: 0px;
 }
 
 #personalInfo span {
@@ -73,21 +76,21 @@ h2 {
 }
 
 #personalInfo h1 {
-    font-size: 50pt;
+    font-size: 60pt;
 }
 #personalInfo h4 {
     font-size: 15pt;
     line-height: 1.5;
 }
 
-#sampleImage {
+#previewImage {
     position: absolute;
     left: 67%;
     top: 12%;
     width: 400px;
 
 }
-
+/* project section*/
 #projectSection {
     height: 100vh;
     width: 100%;
@@ -95,8 +98,75 @@ h2 {
     position: absolute;
     left: 0%;
     top: 100%;
+
+}
+#projectSection span {
+    color: #c0bcac;
 }
 
+#projectTextBox {
+    position: absolute;
+    top: 15%;  
+    right: 10%;
+    text-align: right;
+    width: 600px;
+    
+}
+
+#projectHeading {
+    margin-bottom: 10px;
+}
+#projectHeading h2 {
+    font-size: 60pt;
+    margin-bottom: 0px;
+}
+#projectHeading h4 {
+    font-size: 15pt;
+    margin-top: 10px;
+}
+
+#projectDescription > * {
+    margin: 0px 0px 5px 0px;
+    font-size: 20pt;
+    line-height: 2;
+   
+}
+
+#projectDescription a {
+    color: #c0bcac;
+}
+
+/* project section*/
+    /* sample section*/
+#wordleSample {
+    width: 42%;
+    height: 700px;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;  
+
+}
+#wordleSampleImage {
+    width: 100%;
+}
+.wordleSamplePoints {
+    color: #c0bcac;
+    font-size: 15pt;
+    font-weight: bold;
+    margin-top: 0px;
+    text-align: center;
+    
+}
+
+.wordleSamplePoints li {
+    margin-right: 50px;
+    line-height: 1.5;
+    display: inline-block;
+}
+
+/* skill section*/
 #skillsSection {
     height: 100vh;
     width: 100%;
@@ -104,6 +174,44 @@ h2 {
     position: absolute;
     left: 0%;
     top: 200%;
+    display: flex;
+    justify-content: center;
+}
+
+#softSkills div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 90%;
+}
+#hardSkills p {
+    margin: 20px 0px 20px 0px;
+}
+#skillsSection img {
+    max-width: 20%;
+    margin-right: 20px;
+    max-height: 20%;
+}
+
+.skillsDescription {
+    margin-top: 5%;
+    display: inline-block;
+    width: 40%;
+    height: 90%;
+    text-align: center;
+    
+}
+
+.skillsDescription h2 {
+    margin: 0px;
+    font-size: 60pt;
+}
+
+.skillsDescription p {
+    font-weight: bold;
+    font-size: 20pt;
+    text-align: center;
+
 }
 
 @media screen and (max-width: 1300px) and (min-width: 600px){
@@ -116,7 +224,7 @@ h2 {
         visibility: visible;
 
     }
-    #sampleImage {
+    #previewImage {
         left: 65%;
         top: 25%;
         width: 240px;
@@ -144,10 +252,16 @@ h2 {
 
     }
 
-    #sampleImage {
+    #previewImage {
         left:70%;
         top: 40%;
         width: 25%;
+    }
+    .skillsDescription h2 {
+        font-size: 40pt;
+    }
+    .skillsDescription p {
+        font-size: 15pt;
     }
     
 
@@ -174,10 +288,17 @@ h2 {
 
     }
 
-    #sampleImage {
+    #previewImage {
         visibility: hidden;
     }
     
+    /* skills */
+    .skillsDescription h2 {
+        font-size: 40pt;
+    }
+    .skillsDescription p {
+        font-size: 15pt;
+    }
 
 }
 
