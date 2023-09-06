@@ -76,10 +76,10 @@
 }
 
 #personalInfo h1 {
-    font-size: 60pt;
+    font-size: 9vh;
 }
 #personalInfo h4 {
-    font-size: 15pt;
+    font-size: 3vh;
     line-height: 1.5;
 }
 
@@ -87,7 +87,7 @@
     position: absolute;
     left: 67%;
     top: 12%;
-    width: 400px;
+    height: 80%;
 
 }
 /* project section*/
@@ -227,7 +227,7 @@
     #previewImage {
         left: 65%;
         top: 25%;
-        width: 240px;
+        height: 60%;
     }
 }
 
@@ -253,9 +253,9 @@
     }
 
     #previewImage {
-        left:70%;
+        left: 75%;
         top: 40%;
-        width: 25%;
+        height: 30%;
     }
     .skillsDescription h2 {
         font-size: 40pt;
