@@ -109,7 +109,7 @@
     top: 15%;  
     right: 10%;
     text-align: right;
-    width: 600px;
+    width: 40%;
     
 }
 
@@ -121,13 +121,13 @@
     margin-bottom: 0px;
 }
 #projectHeading h4 {
-    font-size: 15pt;
+    font-size: 3vh;
     margin-top: 10px;
 }
 
 #projectDescription > * {
     margin: 0px 0px 5px 0px;
-    font-size: 20pt;
+    font-size: 3vh;
     line-height: 2;
    
 }
@@ -155,14 +155,16 @@
     color: #c0bcac;
     font-size: 15pt;
     font-weight: bold;
-    margin-top: 0px;
     text-align: center;
     
 }
 
 .wordleSamplePoints li {
+    margin-bottom: 20px;
     margin-right: 50px;
     line-height: 1.5;
+    font-size: 3vh;
+
     display: inline-block;
 }
 
@@ -229,6 +231,27 @@
         top: 25%;
         height: 60%;
     }
+    #projectTextBox {
+        top: 10%
+    }
+    #wordleSample {
+        top: 10%;
+
+    }
+    #projectHeading h4 {
+        font-size: 2.5vh;
+    }
+    
+    #projectDescription > * {
+        font-size: 2.5vh;
+       
+    }
+    .wordleSamplePoints li {
+        font-size: 2.5vh;
+
+    }
+
+    
 }
 
 
@@ -252,16 +275,40 @@
 
     }
 
+    #projectHeading h4 {
+        font-size: 2vh;
+    }
+    
+    #projectDescription > * {
+        font-size: 2vh;
+       
+    }
+
+    .wordleSamplePoints li {
+        font-size: 2vh;
+
+    }
+
     #previewImage {
         left: 75%;
         top: 40%;
         height: 30%;
+    }
+    #wordleSample {
+        top: 10%;
+
+    }
+    #projectTextBox {
+        top: 10%
     }
     .skillsDescription h2 {
         font-size: 40pt;
     }
     .skillsDescription p {
         font-size: 15pt;
+    }
+    #projectHeading h2 {
+        font-size: 40pt;
     }
     
 
@@ -291,6 +338,33 @@
     #previewImage {
         visibility: hidden;
     }
+
+    #projectTextBox {
+        top: 10%
+    }
+
+    #wordleSample {
+        top: 5%;
+
+    }
+    #projectHeading h4 {
+        font-size: 2vh;
+    }
+    
+    #projectDescription > * {
+        font-size: 2vh;
+       
+    }
+
+    .wordleSamplePoints li {
+        font-size: 2vh;
+
+    }
+
+    #projectHeading h2 {
+        font-size: 40pt;
+    }
+    
     
     /* skills */
     .skillsDescription h2 {
