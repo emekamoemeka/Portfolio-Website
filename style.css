@@ -1,6 +1,5 @@
 * {
     font-family: sans-serif;
-    
     text-decoration: none;
 }
 
@@ -37,6 +36,16 @@
     top: 60px;
     right: 5%;
 }
+
+#emailMain:hover {
+    color: white;
+    transition: .5s;
+}
+
+#emailBackup:hover {
+    color: white;
+    transition: .5s;
+}
 #navBar {
     display: flex;
     flex-direction: row;
@@ -51,6 +60,10 @@
     margin-left: 5%;
     font-size: 13pt;
     
+}
+#navBar > *:hover {
+    color: white;
+    transition: .5s;
 }
 
 #personalInfo {
@@ -70,9 +83,14 @@
     color: #c0bcac;
 }
 #personalInfo img {
-    height: 150px;
-    width: 150px;
+    max-height: 20%;
+    max-width: 20%;
     border-radius: 50%;
+}
+
+#personalInfo img:hover {
+    transition: 1s;
+    transform: scale(1.5);
 }
 
 #personalInfo h1 {
@@ -106,6 +124,12 @@
     width: 50px;
     height: 50px;
     margin-bottom: none;
+    text-align: center;
+    
+}
+#projectSection button:hover {
+    transform: scale(1.1);
+    transition: .5s;
 }
 #projectSection span {
     color: #c0bcac;
@@ -144,6 +168,14 @@
 }
 
 /* project section*/
+#projectSection button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #c0bcac;
+    font-size: 3vh;
+}
     /* sample section*/
         /* wordlesample*/
 #wordleSample {
@@ -179,6 +211,12 @@
     display: inline-block;
 }
 
+.wordleSamplePoints > *:hover {
+    color: white;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
         /*chessmini sample*/
 
 #chessMiniSample {
@@ -208,7 +246,12 @@
     visibility: hidden;
     z-index: 10;
 
+}
 
+.chessMiniSamplePoints > *:hover {
+    color: white;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .chessMiniSamplePoints li {
@@ -242,11 +285,11 @@
 #skillsSection img {
     max-width: 20%;
     margin-right: 20px;
-    max-height: 20%;
+    max-height: 15%;
 }
 
-.skillsDescription {
-    margin-top: 5%;
+.skillsDescription{
+    margin-top: 3%;
     display: inline-block;
     width: 40%;
     height: 90%;
@@ -256,12 +299,12 @@
 
 .skillsDescription h2 {
     margin: 0px;
-    font-size: 60pt;
+    font-size: 8vh;
 }
 
 .skillsDescription p {
     font-weight: bold;
-    font-size: 20pt;
+    font-size: 3vh;
     text-align: center;
 
 }
@@ -297,10 +340,17 @@
         font-size: 2.5vh;
 
     }
-
+    #projectSection button {
+        height: 30px;
+        width: 30px;
+    }
     .chessMiniSamplePoints li {
         margin-bottom: 0px;
         
+    }
+    #skillsSection img {
+        max-width: 12%;
+        max-height: 10%;
     }
 
     
@@ -343,7 +393,10 @@
         margin-bottom: 0px;
         line-height: 1;        
     }
-
+    #projectSection button {
+        height: 20px;
+        width: 20px;
+    }
     #previewImage {
         left: 75%;
         top: 40%;
@@ -353,14 +406,14 @@
     #projectTextBox {
         top: 10%
     }
-    .skillsDescription h2 {
-        font-size: 40pt;
-    }
-    .skillsDescription p {
-        font-size: 15pt;
-    }
+
     #projectHeading h2 {
         font-size: 40pt;
+    }
+
+    #skillsSection img {
+        max-width: 10%;
+        max-height: 7%;
     }
     
 
@@ -403,24 +456,33 @@
         font-size: 2vh;
        
     }
+    .wordleSamplePoints {
+        margin-top: 0px;
+    }
 
     .wordleSamplePoints li {
         font-size: 2vh;
-
+        margin-bottom: 0px;
+        line-height: 1;        
+        
     }
 
     #projectHeading h2 {
         font-size: 40pt;
     }
+    #projectSection button {
+        height: 20px;
+        width: 20px;
+        text-align: center;
+    }
     
     
     /* skills */
-    .skillsDescription h2 {
-        font-size: 40pt;
-    }
-    .skillsDescription p {
-        font-size: 15pt;
+    #skillsSection img {
+        max-width: 10%;
+        max-height: 7%;
     }
 
 }
+
 
