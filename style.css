@@ -91,7 +91,6 @@
 
 }
 /* project section*/
-
 #projectSection {
     height: 100vh;
     width: 100%;
@@ -101,13 +100,20 @@
     top: 100%;
 
 }
+#projectSection button{
+    position: absolute;
+    right: 0%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: none;
+}
 #projectSection span {
     color: #c0bcac;
 }
 
 #projectTextBox {
     position: absolute;
-    top: 15%;  
+    top: 10%;  
     right: 10%;
     text-align: right;
     width: 40%;
@@ -139,24 +145,29 @@
 
 /* project section*/
     /* sample section*/
+        /* wordlesample*/
 #wordleSample {
     width: 42%;
     position: absolute;
-    top: 4%;
     left: 5%;
     display: flex;
     flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 
 }
 #wordleSampleImage {
-    width: 1;
+    z-index: 10;
+    max-height: 60%;
+    max-width: 80%;
 }
 .wordleSamplePoints {
     color: #c0bcac;
     font-size: 15pt;
     font-weight: bold;
     text-align: center;
-    
+    z-index: 10;
 }
 
 .wordleSamplePoints li {
@@ -166,6 +177,45 @@
     font-size: 3vh;
 
     display: inline-block;
+}
+
+        /*chessmini sample*/
+
+#chessMiniSample {
+    height: 100vh;
+    position: absolute; 
+    display: inline;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    left: 5%;
+
+}
+
+#chessMiniSampleImage {
+    max-height: 70%;
+    max-width: 60%;
+    top: 10%;
+    left: 5%;
+    opacity: 0.25;
+
+}
+
+.chessMiniSamplePoints {
+    color: #c0bcac;
+    font-size: 15pt;
+    font-weight: bold;
+    visibility: hidden;
+    z-index: 10;
+
+
+}
+
+.chessMiniSamplePoints li {
+    color: #c0bcac;
+    margin-bottom: 20px;
+    line-height: 2;
+    font-size: 2vh;
 }
 
 /* skill section*/
@@ -234,10 +284,7 @@
     #projectTextBox {
         top: 10%
     }
-    #wordleSample {
-        top: 10%;
 
-    }
     #projectHeading h4 {
         font-size: 2.5vh;
     }
@@ -249,6 +296,11 @@
     .wordleSamplePoints li {
         font-size: 2.5vh;
 
+    }
+
+    .chessMiniSamplePoints li {
+        margin-bottom: 0px;
+        
     }
 
     
@@ -283,10 +335,13 @@
         font-size: 2vh;
        
     }
-
+    .wordleSamplePoints {
+        margin-top: 0px;
+    }
     .wordleSamplePoints li {
         font-size: 2vh;
-
+        margin-bottom: 0px;
+        line-height: 1;        
     }
 
     #previewImage {
@@ -294,10 +349,7 @@
         top: 40%;
         height: 30%;
     }
-    #wordleSample {
-        top: 10%;
 
-    }
     #projectTextBox {
         top: 10%
     }
@@ -343,10 +395,6 @@
         top: 10%
     }
 
-    #wordleSample {
-        top: 5%;
-
-    }
     #projectHeading h4 {
         font-size: 2vh;
     }

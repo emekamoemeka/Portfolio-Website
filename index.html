@@ -32,6 +32,8 @@
     <div id="projectSection">
       <!-- sample images and descriptions-->
       <div id="projectTextBox">
+        <button id="nextButton">next</button>
+
         <div id="projectHeading">
           <h2><span>Projects</span></h2>
           <h4>My out of school <span>independent </span> projects</h4>
@@ -50,28 +52,37 @@
           </h5>
           <h5><span>Techstack:</span> HTML, CSS, javascript, git</h5>
           <h5>
-            <a
-              target="_blank"
-              href="https://apps.apple.com/us/app/chessmini-made-for-mobile/id6449878204"
-              >project link</a
-            >
-
-            <a
-              target="blank"
-              href="https://github.com/emekamoemeka/Portfolio-Website.git"
+            <a target="_blank" href="https://wordlerace.com/">project link</a>
+            |
+            <a target="blank" href="https://github.com/emekamoemeka/Wordle-Race"
               >view repository</a
             >
           </h5>
         </div>
       </div>
       <div id="wordleSample">
-        <ul class="wordleSamplePoints" id="one">
+        <ul class="wordleSamplePoints" id="wOne">
           <li>Automatic board flip</li>
           <li>Disables illegal moves from being played</li>
           <li>Detects checks, checkmate, and pins</li>
         </ul>
         <img id="wordleSampleImage" src="images/wordlemacBook.png" alt="" />
-        <ul class="wordleSamplePoints" id="two">
+        <ul class="wordleSamplePoints" id="wTwo">
+          <li>Allows for pawn promotion</li>
+          <li>Tracks material difference</li>
+          <li>Resets position</li>
+        </ul>
+      </div>
+      <div id="chessMiniSample">
+        <img
+          id="chessMiniSampleImage"
+          src="images/chessMiniPhoneScreen.png"
+          alt="Chess app image"
+        />
+        <ul class="chessMiniSamplePoints" id="cOne">
+          <li>Automatic board flip</li>
+          <li>Disables illegal moves from being played</li>
+          <li>Detects checks, checkmate, and pins</li>
           <li>Allows for pawn promotion</li>
           <li>Tracks material difference</li>
           <li>Resets position</li>
@@ -108,5 +119,6 @@
         <img src="images/swift.png" alt="" />
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
