@@ -18,6 +18,7 @@ let projectTitle = document.getElementById("projectDescription").querySelector("
 let projectDescription = Array.from(document.getElementById("projectDescription").querySelectorAll("h5"))
 sampleIndex = 0
 
+
 function buttonClickHandler() {
     // turn off wordle
     if (sampleIndex == 0) {
